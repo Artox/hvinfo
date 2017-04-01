@@ -49,7 +49,7 @@ src/config.ads: VERSION mkconfig.sh src/config.ads.in
 .PHONY: hvinfo
 hvinfo:
 	mkdir -p $(BUILD_DIR)
-	$(GPRBUILD) -Phvinfo $(BUILD_FLAGS)
+	$(GPRBUILD) -R -Phvinfo $(BUILD_FLAGS)
 
 clean:
 	if test -d $(BUILD_DIR); then \
